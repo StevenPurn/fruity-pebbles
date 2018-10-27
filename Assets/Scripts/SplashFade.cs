@@ -11,7 +11,6 @@ public class SplashFade : MonoBehaviour
     public Image splashImage;
     public string loadGame;
     void Start() {
-        Debug.Log("starting");
         StartCoroutine(FadeCanvas());
     }
 
@@ -27,12 +26,10 @@ public class SplashFade : MonoBehaviour
     }
     void FadeIn()
     {
-        Debug.Log("fade");
         splashImage.CrossFadeAlpha(1.0f, 1.5f, false);
     }
     void FadeOut()
     {
-        Debug.Log("fade");
         splashImage.CrossFadeAlpha(0.0f, 2.5f, false);
     }
 }
